@@ -1,0 +1,169 @@
+@import "reset";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 calc((100vw - 1170px) / 2);
+
+  &__logo {
+
+  }
+
+  &__navigation {
+    margin: 0 84px 0 428px;
+
+    &-list {
+      display: flex;
+      gap: 42px;
+    }
+
+    &-item {
+
+    }
+  }
+
+  &__burger-btn {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+}
+
+.hero {
+  height: 600px;
+  background-color: lightblue;
+}
+
+.blog {
+  height: 1894px;
+  padding: 90px calc((100vw - 1170px) / 2) 0;
+
+  &__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 48px;
+    margin-bottom: 63px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__item {
+    height: 470px;
+    display: flex;
+    gap: 30px;
+
+    &_reverse {
+      flex-direction: row-reverse;
+    }
+
+    &-column {
+      width: 570px;
+      height: 470px;
+      background-color: lightblue;
+    }
+  }
+}
+
+.posts {
+  height: 768px;
+}
+
+.popular {
+  height: 768px;
+}
+
+.testament {
+  height: 768px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  height: 300px;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    height: calc(60vw / 7.68);
+
+    &__navigation {
+      display: none;
+    }
+
+    &__burger-btn {
+      height: 22px;
+      width: 34px;
+    }
+  }
+
+  .hero {
+    height: calc(320vw / 7.68);
+  }
+
+  .blog {
+    padding: calc(70vw / 7.68) calc(34vw / 7.68) 0;
+    height: calc(1174vw / 7.68);
+
+    &__items {
+      height: calc(730vw / 7.68);
+      gap: calc(50vw / 7.68);
+    }
+
+    &__item {
+      height: calc(280vw / 7.68);
+      gap: calc(20vw / 7.68);
+
+      &-column {
+        width: calc(340vw / 7.68);
+        height: calc(280vw / 7.68);
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: calc(60vh / 5.6);
+  }
+
+  .hero {
+    height: calc(500vh / 5.6);
+  }
+
+  .blog {
+    padding: calc(70vw / 3.2) calc(10vw / 3.2) 0;
+
+    &__items {
+      height: calc(1264vw / 3.2);
+      gap: calc(50vw / 3.2);
+    }
+
+    &__item {
+      flex-direction: column-reverse;
+      gap: calc(37vw / 3.2);
+      height: calc(607vw / 3.2);
+
+      &-column {
+        width: 100%;
+        height: calc(250vw / 3.2);
+
+        &_text {
+          height: 100vw;
+        }
+      }
+    }
+
+
+  }
+}

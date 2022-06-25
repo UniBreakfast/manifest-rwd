@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 calc((100vw - 1170px) / 2);
+}
+.header__navigation {
+  margin: 0 84px 0 428px;
+}
+.header__navigation-list {
+  display: flex;
+  gap: 42px;
+}
+.header__burger-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.hero {
+  height: 600px;
+  background-color: lightblue;
+}
+
+.blog {
+  height: 1894px;
+  padding: 90px calc((100vw - 1170px) / 2) 0;
+}
+.blog__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  margin-bottom: 63px;
+}
+.blog__items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.blog__item {
+  height: 470px;
+  display: flex;
+  gap: 30px;
+}
+.blog__item_reverse {
+  flex-direction: row-reverse;
+}
+.blog__item-column {
+  width: 570px;
+  height: 470px;
+  background-color: lightblue;
+}
+
+.posts {
+  height: 768px;
+}
+
+.popular {
+  height: 768px;
+}
+
+.testament {
+  height: 768px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  height: 300px;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    height: 7.8125vw;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .header__burger-btn {
+    height: 22px;
+    width: 34px;
+  }
+
+  .hero {
+    height: 41.6666666667vw;
+  }
+
+  .blog {
+    padding: 9.1145833333vw 4.4270833333vw 0;
+    height: 152.8645833333vw;
+  }
+  .blog__items {
+    height: 95.0520833333vw;
+    gap: 6.5104166667vw;
+  }
+  .blog__item {
+    height: 36.4583333333vw;
+    gap: 2.6041666667vw;
+  }
+  .blog__item-column {
+    width: 44.2708333333vw;
+    height: 36.4583333333vw;
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    height: 10.7142857143vh;
+  }
+
+  .hero {
+    height: 89.2857142857vh;
+  }
+
+  .blog {
+    padding: 21.875vw 3.125vw 0;
+  }
+  .blog__items {
+    height: 395vw;
+    gap: 15.625vw;
+  }
+  .blog__item {
+    flex-direction: column-reverse;
+    gap: 11.5625vw;
+    height: 189.6875vw;
+  }
+  .blog__item-column {
+    width: 100%;
+    height: 78.125vw;
+  }
+  .blog__item-column_text {
+    height: 100vw;
+  }
+}/*# sourceMappingURL=main.css.map */
